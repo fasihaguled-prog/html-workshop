@@ -115,3 +115,89 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #f8bbd0;
 }
+.transition-button {
+  background-color: #784f6e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.transition-button:hover {
+  background-color: #f8bbd0;
+}
+
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: #4e2233;
+  position: relative;
+  animation: move 2s infinite alternate;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
+.pseudo-list {
+  list-style-position: inside;
+  background-color: #ffffff;
+  padding: 0;          
+  margin: 0;          
+  border: 2px solid #4e2233;
+  width: 460px;
+}
+
+.pseudo-list li:nth-child(odd) {
+  background-color: #f8bbd0;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.pseudo-list li {
+  padding: 8px;
+  margin-bottom: 0;
+}
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+  font-size: 18px;
+  color: #784f6e;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 40px;
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #784f6e;
+}
+.quote::after {
+  content: "”";
+  font-size: 40px;
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #784f6e;
+}
