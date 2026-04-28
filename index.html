@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workshop 4</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisustussuunnittelu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div class="announcement-bar">
+    Ilmainen sisustuskartoitus uusille asiakkaille
+  </div>
+  <nav class="responsive-nav">
+  <button class="menu-toggle">☰ Menu</button>
+
+  <ul class="nav-list">
+    <li><a href="#">Etusivu</a></li>
+    <li><a href="#">Palvelut</a></li>
+    <li><a href="#">Työt</a></li>
+    <li><a href="#">Yhteystiedot</a></li>
+  </ul>
+</nav>
   <header>
-    <h1>My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Sisustussuunnittelu</h1>
+    <p>Teemme sisustussuunnittelua liiketiloihin ja puutarhoihin.</p>
   </header>
-
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>This is a paragraph about me.</p>
-    </section>
+  <section>
+    <h2>Palvelumme</h2>
 
-    <section>
-      <h2>Grid Layout</h2>
-      <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
+    <div class="responsive-container">
+      <div class="column">
+        <h3>Liiketilojen sisustussuunnittelu</h3>
+        <p>Suunnittelemme viihtyisiä ja käytännöllisiä liiketiloja yritysten tarpeisiin.</p>
       </div>
-    </section>
 
-    <section>
-      <h2>Flexbox Layout</h2>
-      <div class="flex-container">
-        <div class="box">Box 1</div>
-        <div class="box">Box 2</div>
-        <div class="box">Box 3</div>
+      <div class="column">
+        <h3>Puutarhasisustus</h3>
+        <p>Luomme kauniita ja toimivia puutarhaympäristöjä koteihin ja yrityksille</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Responsive Box</h2>
-      <div class="responsive-box">
-        Resize the window to see the effect
-      </div>
-    </section>
-  </main>
+  <section>
+  <h2>Tutustu töihimme</h2>
 
-  <footer>
-    <p>Copyright 2026</p>
-  </footer>
+  <h3>Liiketilojen sisustus</h3>
+  <div class="image-container">
+    <img src="sisustusuunnittelu.png" alt="Yrityssisustus" class="responsive-image">
+    <img src="sisustusuunnittelu2.png" alt="Yrityssisustus" class="responsive-image">
+    <img src="sisustusuunnittelu3.png" alt="Yrityssisustus" class="responsive-image">
+    <img src="sisustusuunnittelu4.png" alt="Yrityssisustus" class="responsive-image">
+  </div>
+
+  <h3>Puutarhasisustus</h3>
+  <div class="image-container">
+    <img src="sisustusuunnittelu5.png" alt="Puutarha" class="responsive-image">
+    <img src="sisustusuunnittelu9.png" alt="Puutarha" class="responsive-image">
+    <img src="sisustusuunnittelu7.png" alt="Puutarha" class="responsive-image">
+    <img src="sisustusuunnittelu8.png" alt="Puutarha" class="responsive-image">
+  </div>
+
+</section>
+
+<section>
+  <h2>Responsiivinen väri</h2>
+
+  <div class="media-query-box">
+    Muuta selainikkunan kokoa ja katso, miten taustaväri vaihtuu.
+  </div>
+</section>
+
+</main>
 
 </body>
 </html>
