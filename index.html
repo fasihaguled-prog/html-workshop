@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sisustussuunnittelu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,15 +15,52 @@
   <div class="announcement-bar">
     Ilmainen sisustuskartoitus uusille asiakkaille
   </div>
-  <nav class="responsive-nav">
-  <button class="menu-toggle">☰ Menu</button>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-  <ul class="nav-list">
-    <li><a href="#">Etusivu</a></li>
-    <li><a href="#">Palvelut</a></li>
-    <li><a href="#">Työt</a></li>
-    <li><a href="#">Yhteystiedot</a></li>
-  </ul>
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+      Sisustussuunnittelu
+    </a>
+
+    <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Etusivu</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Palvelut</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Työt</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Yhteystiedot</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
 </nav>
   <header>
     <h1>Sisustussuunnittelu</h1>
@@ -28,26 +69,78 @@
   <main>
   <section>
     <h2>Palvelumme</h2>
+<div class="text-center mb-4">
 
-    <div class="responsive-container">
-      <div class="column">
-        <h3>Liiketilojen sisustussuunnittelu</h3>
-        <p>Suunnittelemme viihtyisiä ja käytännöllisiä liiketiloja yritysten tarpeisiin.</p>
-      </div>
+  <button class="btn btn-primary">
+    Varaa konsultaatio
+  </button>
 
-      <div class="column">
-        <h3>Puutarhasisustus</h3>
-        <p>Luomme kauniita ja toimivia puutarhaympäristöjä koteihin ja yrityksille</p>
-      </div>
+  <button class="btn btn-secondary">
+    Lue lisää
+  </button>
+
+  <button class="btn btn-success">
+    Lähetä
+  </button>
+
+</div>
+
+ <div class="container">
+
+  <div class="row">
+
+    <div class="col-md-4 col-12">
+      <h3>Liiketilojen sisustussuunnittelu</h3>
+      <p>Suunnittelemme viihtyisiä ja käytännöllisiä liiketiloja yritysten tarpeisiin.</p>
     </div>
+
+    <div class="col-md-4 col-12">
+      <h3>Puutarhasisustus</h3>
+      <p>Luomme kauniita ja toimivia puutarhaympäristöjä koteihin ja yrityksille.</p>
+    </div>
+
+    <div class="col-md-4 col-12">
+      <h3>Moderni sisustus</h3>
+      <p>Suunnittelemme moderneja ja toimivia sisustusratkaisuja.</p>
+    </div>
+
+  </div>
   </section>
 
   <section>
   <h2>Tutustu töihimme</h2>
 
+  <div class="card" style="width: 18rem;">
+
+  <img src="Sisustus.png"
+       class="card-img-top"
+       alt="Liiketilan sisustus">
+
+  <div class="card-body">
+
+    <h5 class="card-title">
+      Moderni sisustus
+    </h5>
+
+    <p class="card-text">
+      Tutustu moderneihin ja toimiviin sisustusratkaisuihimme.
+    </p>
+
+    <a href="#" class="btn btn-secondary">
+      Lue lisää
+    </a>
+
+  </div>
+
+</div>
+
+<div class="alert alert-success" role="alert">
+  Viestisi on lähetetty onnistuneesti.
+</div>
+
   <h3>Liiketilojen sisustus</h3>
   <div class="image-container">
-    <img src="sisustusuunnittelu.png" alt="Yrityssisustus" class="responsive-image">
+    <img src="sisustusuunnittelu1.png" alt="Yrityssisustus" class="responsive-image">
     <img src="sisustusuunnittelu2.png" alt="Yrityssisustus" class="responsive-image">
     <img src="sisustusuunnittelu3.png" alt="Yrityssisustus" class="responsive-image">
     <img src="sisustusuunnittelu4.png" alt="Yrityssisustus" class="responsive-image">
@@ -72,6 +165,8 @@
 </section>
 
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
